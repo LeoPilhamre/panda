@@ -331,6 +331,16 @@
             "rid": "win-x64"
           }
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -955,27 +965,33 @@
         "ultz.native.sdl.2.0.14.1.nupkg.sha512",
         "ultz.native.sdl.nuspec"
       ]
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Silk.NET >= 2.15.0"
+      "Silk.NET >= 2.15.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leo\\.nuget\\packages\\": {}
+    "C:\\Users\\leox965a\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Panda\\Panda.csproj",
+      "projectUniqueName": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Panda\\Panda.csproj",
       "projectName": "Panda",
-      "projectPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Panda\\Panda.csproj",
-      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Panda\\obj\\",
+      "projectPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Panda\\Panda.csproj",
+      "packagesPath": "C:\\Users\\leox965a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Panda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leox965a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -988,7 +1004,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

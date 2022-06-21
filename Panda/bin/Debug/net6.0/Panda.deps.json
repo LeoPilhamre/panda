@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Panda/1.0.0": {
         "dependencies": {
-          "Silk.NET": "2.15.0"
+          "Silk.NET": "2.15.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Panda.dll": {}
@@ -275,6 +276,11 @@
             "fileVersion": "2.0.14.0"
           }
         }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        }
       }
     }
   },
@@ -465,6 +471,11 @@
       "sha512": "sha512-pqhYzaFfEXGCZag7JsO3YoNHYALBqFHu4a3Ejyz5rjPW51p3Tfjs82Cz8n9GkohzJADZxSRthNYWpa3Hi1Vp6g==",
       "path": "ultz.native.sdl/2.0.14.1",
       "hashPath": "ultz.native.sdl.2.0.14.1.nupkg.sha512"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

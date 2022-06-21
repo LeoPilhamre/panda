@@ -278,10 +278,16 @@
       },
       "Panda/1.0.0": {
         "dependencies": {
-          "Silk.NET": "2.15.0"
+          "Silk.NET": "2.15.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Panda.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
         }
       }
     }
@@ -475,6 +481,11 @@
       "hashPath": "ultz.native.sdl.2.0.14.1.nupkg.sha512"
     },
     "Panda/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
