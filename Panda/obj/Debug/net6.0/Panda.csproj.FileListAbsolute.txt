@@ -1,0 +1,12 @@
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\bin\Debug\net6.0\Panda.deps.json
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\bin\Debug\net6.0\Panda.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\bin\Debug\net6.0\Panda.pdb
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.csproj.AssemblyReference.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.GeneratedMSBuildEditorConfig.editorconfig
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.AssemblyInfoInputs.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.AssemblyInfo.cs
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.csproj.CoreCompileInputs.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\refint\Panda.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.pdb
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\ref\Panda.dll
