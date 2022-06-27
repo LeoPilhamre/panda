@@ -18,7 +18,9 @@ public class Program
         Panda.Networking.Client.Client client = new Panda.Networking.Client.Client();
         client.Connect();
 
-        new Game(window, server).Start();
+        List<Entity> entities = new List<Entity>();
+
+        new Game(window, server, entities).Start();
 
         Console.ReadKey();
     }

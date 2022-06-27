@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
+using Panda.Entities;
 
 
 namespace Panda.Utils
 {
 
-    internal class Component
+    internal class Component<T>
     {
 
     }
 
 
-    internal sealed class GameObject
+    internal sealed class GameObject<T> where T : Entity
     {
 
         public string name = "unnamed";
@@ -22,6 +23,8 @@ namespace Panda.Utils
         public GameObject()
         {
             components = new List<Component>();
+
+            Entity entity = new T() as Entity;
         }
 
         public GameObject(string name)
@@ -33,7 +36,7 @@ namespace Panda.Utils
 
         public void AddComponent<T>() where T : Component
         {
-            // components.Add();
+            components.Add(new Component<T>());
         }
 
     }
