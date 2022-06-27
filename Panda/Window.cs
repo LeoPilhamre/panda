@@ -9,7 +9,7 @@ namespace Panda
     public sealed class Window : IDisposable
     {
 
-        private IWindow? window;
+        public static IWindow? window;
 
 
         readonly WindowOptions options;

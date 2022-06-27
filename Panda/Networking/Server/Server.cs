@@ -5,25 +5,23 @@ using System.Net.Sockets;
 using Utils.Console;
 
 
-namespace Panda.Networking
+namespace Panda.Networking.Server
 {
     
-    public sealed class Server
+    public sealed class Server : Panda.Networking.Settings
     {
-
-        readonly ushort port;
-        readonly int maxClientConnections;
-
 
         private TcpListener listener;
 
-        private Dictionary<int, Client> clients = new Dictionary<int, Client>();
+        public static Dictionary<int, Client> clients = new Dictionary<int, Client>();
+
+        public delegate void PacketHandler(int fromClient, Packet packet);
+        public static Dictionary<int, PacketHandler> packetHandlers;
 
 
-        public Server(ushort port, int maxClientConnections)
+        public Server()
         {
-            this.port = port;
-            this.maxClientConnections = maxClientConnections;
+            
         }
 
 
@@ -31,7 +29,7 @@ namespace Panda.Networking
         {
             WriteLine.Log("Starting server...");
 
-            InitializeClients();
+            InitializeServerData();
 
             listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
@@ -45,13 +43,15 @@ namespace Panda.Networking
             TcpClient client = listener.EndAcceptTcpClient(result);
             listener.BeginAcceptTcpClient(new AsyncCallback(Connected), null);
 
-            WriteLine.Log($"Incoming connection from {client.Client.RemoteEndPoint}...");
+            WriteLine.Log($"Incoming connection from [{client.Client.RemoteEndPoint}]...");
 
             for (int i = 1; i <= maxClientConnections; i++)
             {
                 if (clients[i].tcp.socket == null)
                 {
                     clients[i].tcp.Connect(client);
+
+                    WriteLine.Log($"[{client.Client.RemoteEndPoint}] has established a connection!");
                     
                     return;
                 }
@@ -61,10 +61,15 @@ namespace Panda.Networking
         }
 
 
-        private void InitializeClients()
+        private void InitializeServerData()
         {
             for (int i = 1; i <= maxClientConnections; i++)
                 clients.Add(i, new Client(i));
+
+            packetHandlers = new Dictionary<int, PacketHandler>()
+            {
+                { (int) ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived }
+            };
         }
 
     }

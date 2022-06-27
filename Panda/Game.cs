@@ -1,6 +1,7 @@
 using System;
 using Panda.Input;
-using Panda.Networking;
+using Panda.Networking.Server;
+using Panda.Rendering;
 
 
 namespace Panda
@@ -11,14 +12,17 @@ namespace Panda
 
         readonly Window window;
         readonly Keyboard keyboard;
+        readonly Renderer renderer;
         readonly Server server;
 
 
-        public Game(Window window, Keyboard keyboard, Server server)
+        public Game(Window window, Server server)
         {
             this.window = window;
-            this.keyboard = keyboard;
             this.server = server;
+
+            keyboard = new Keyboard();
+            renderer = new Renderer();
         }
 
 
@@ -26,19 +30,22 @@ namespace Panda
         {
             // onOpen
             server.Start();
+            renderer.OnOpen(Window.window);
 
         }, () =>
         {
             // onClose
             window.Dispose();
+            renderer.Dispose();
 
         }, dt => {
             // onUpdate
+            ThreadManager.UpdateMain();
 
         }, () =>
         {
             // onRender
-
+            renderer.OnRender();
 
         }, keyboard.KeyDown, keyboard.KeyUp);
 

@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\leox965a\\.nuget\\packages\\": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj",
+      "projectUniqueName": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj",
       "projectName": "Utils",
-      "projectPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj",
-      "packagesPath": "C:\\Users\\leox965a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\obj\\",
+      "projectPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\leox965a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,6 +55,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

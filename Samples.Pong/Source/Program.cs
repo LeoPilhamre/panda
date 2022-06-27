@@ -1,6 +1,7 @@
 using Panda;
 using Panda.Input;
-using Panda.Networking;
+using Panda.Networking.Server;
+using Panda.Networking.Client;
 
 
 namespace Samples.Dino;
@@ -11,11 +12,15 @@ public class Program
     public static void Main(string[] argv)
     {
         Window window = new Window("cum <3", 1280, 720);
-        Keyboard keyboard = new Keyboard();
 
-        Server server = new Server(7777, 10);
+        Server server = new Server();
 
-        new Game(window, keyboard, server).Start();
+        Panda.Networking.Client.Client client = new Panda.Networking.Client.Client();
+        client.Connect();
+
+        new Game(window, server).Start();
+
+        Console.ReadKey();
     }
 
 }

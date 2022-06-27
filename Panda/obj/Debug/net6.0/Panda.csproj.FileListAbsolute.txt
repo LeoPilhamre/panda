@@ -25,3 +25,6 @@ C:\Users\leox965a\Desktop\engine\panda\Panda\bin\Debug\net6.0\Utils.dll
 C:\Users\leox965a\Desktop\engine\panda\Panda\bin\Debug\net6.0\Utils.pdb
 C:\Users\leox965a\Desktop\engine\panda\Panda\obj\Debug\net6.0\Panda.csproj.CopyComplete
 C:\Users\leox965a\Desktop\engine\panda\Panda\obj\Debug\net6.0\ref\Panda.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\bin\Debug\net6.0\Utils.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\bin\Debug\net6.0\Utils.pdb
+F:\School\Gymnasiearbetet\Code\engine\Panda\Panda\obj\Debug\net6.0\Panda.csproj.CopyComplete

@@ -10,3 +10,15 @@ C:\Users\leox965a\Desktop\engine\panda\Utils\obj\Debug\net5.0\Utils.dll
 C:\Users\leox965a\Desktop\engine\panda\Utils\obj\Debug\net5.0\refint\Utils.dll
 C:\Users\leox965a\Desktop\engine\panda\Utils\obj\Debug\net5.0\Utils.pdb
 C:\Users\leox965a\Desktop\engine\panda\Utils\obj\Debug\net5.0\ref\Utils.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\bin\Debug\net5.0\Utils.deps.json
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\bin\Debug\net5.0\Utils.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\bin\Debug\net5.0\Utils.pdb
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.csproj.AssemblyReference.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.GeneratedMSBuildEditorConfig.editorconfig
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.AssemblyInfoInputs.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.AssemblyInfo.cs
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.csproj.CoreCompileInputs.cache
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\refint\Utils.dll
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\Utils.pdb
+F:\School\Gymnasiearbetet\Code\engine\Panda\Utils\obj\Debug\net5.0\ref\Utils.dll
