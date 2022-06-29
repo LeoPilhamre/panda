@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj": {}
+    "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj": {}
   },
   "projects": {
-    "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj": {
+    "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj",
+        "projectUniqueName": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj",
-        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-        "outputPath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\obj\\",
+        "projectPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\leox965a\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leox965a\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,20 +49,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

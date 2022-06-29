@@ -1,15 +1,22 @@
-
-
-
 namespace Panda
 {
     
-    public sealed class Entity
+    public abstract class Entity
     {
 
-        public Entity()
+        public virtual void Start()
         {
             
+        }
+
+        public virtual void Update(double dt)
+        {
+
+        }
+
+        public virtual void Close()
+        {
+
         }
 
     }

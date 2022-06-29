@@ -4,25 +4,31 @@ using Panda.Networking.Server;
 using Panda.Networking.Client;
 
 
-namespace Samples.Dino;
-
-public class Program
+namespace Samples.Dino
 {
 
-    public static void Main(string[] argv)
+
+    public class Program
     {
-        Window window = new Window("cum <3", 1280, 720);
 
-        Server server = new Server();
+        public static void Main(string[] argv)
+        {
+            Window window = new Window("cum <3", 1280, 720);
 
-        Panda.Networking.Client.Client client = new Panda.Networking.Client.Client();
-        client.Connect();
+            Server server = new Server();
 
-        List<Entity> entities = new List<Entity>();
+            Panda.Networking.Client.Client client = new Panda.Networking.Client.Client();
+            client.Connect();
 
-        new Game(window, server, entities).Start();
+            List<Entity> entities = new List<Entity>();
+            entities.Add(new Player());
 
-        Console.ReadKey();
+            new Game(window, server, entities).Start();
+
+            Console.ReadKey();
+        }
+
     }
 
 }
+

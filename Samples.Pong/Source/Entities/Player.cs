@@ -1,27 +1,32 @@
-using Panda.Entities;
+using Panda;
 
 
-internal sealed class Player : Entity
+namespace Samples.Dino
 {
 
-    public Player()
+    internal sealed class Player : Entity
     {
 
-    }
+        public Player()
+        {
 
-    public override void Start()
-    {
-        base.Start();
-    }
+        }
 
-    public override void Update()
-    {
-        base.Update();
-    }
+        public override void Start()
+        {
+            base.Start();
+        }
 
-    public override void Close()
-    {
-        base.Close();
+        public override void Update(double dt)
+        {
+            base.Update(dt);
+        }
+
+        public override void Close()
+        {
+            base.Close();
+        }
+
     }
 
 }

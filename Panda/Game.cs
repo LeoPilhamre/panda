@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Panda.Input;
 using Panda.Networking.Server;
 using Panda.Rendering;
@@ -11,15 +12,17 @@ namespace Panda
     {
 
         readonly Window window;
+        readonly Server server;
+        readonly List<Entity> entities;
         readonly Keyboard keyboard;
         readonly Renderer renderer;
-        readonly Server server;
 
 
-        public Game(Window window, Server server)
+        public Game(Window window, Server server, List<Entity> entities)
         {
             this.window = window;
             this.server = server;
+            this.entities = entities;
 
             keyboard = new Keyboard();
             renderer = new Renderer();
@@ -32,7 +35,8 @@ namespace Panda
             server.Start();
             renderer.OnOpen(Window.window);
 
-            
+            foreach (Entity entity in entities)
+                entity.Start();
 
         }, () =>
         {
@@ -40,9 +44,15 @@ namespace Panda
             window.Dispose();
             renderer.Dispose();
 
+            foreach (Entity entity in entities)
+                entity.Close();
+
         }, dt => {
             // onUpdate
             ThreadManager.UpdateMain();
+
+            foreach (Entity entity in entities)
+                entity.Update(dt);
 
         }, () =>
         {

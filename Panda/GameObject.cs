@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Panda.Entities;
 
 
 namespace Panda.Utils
@@ -17,26 +16,26 @@ namespace Panda.Utils
 
         public string name = "unnamed";
         
-        public List<Component> components;
+        public List<Component<T>> components;
 
 
         public GameObject()
         {
-            components = new List<Component>();
+            components = new List<Component<T>>();
 
-            Entity entity = new T() as Entity;
+            // Entity entity = new T() as Entity;
         }
 
         public GameObject(string name)
         {
             this.name = name;
-            components = new List<Component>();
+            components = new List<Component<T>>();
         }
 
 
-        public void AddComponent<T>() where T : Component
+        public void AddComponent<T>()
         {
-            components.Add(new Component<T>());
+            // components.Add(new Component<T>());
         }
 
     }

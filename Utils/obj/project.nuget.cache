@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g8nw7ZxtwFvpiOrDgtcJFPWZGnlprvrg+xoYAjzzca5yScupnUYGbTkMdU5ltHm9EaZ9aYQeio8vShmU2BJ1Pw==",
+  "dgSpecHash": "DFk9cay4HAcQLN8cgNrTuxJFPOVrJML0mXObBxdn51E/n2yih9S+LtRfH0JXlX/Nxga3NW3nQ2BH8OuM3n2MuA==",
   "success": true,
-  "projectFilePath": "F:\\School\\Gymnasiearbetet\\Code\\engine\\Panda\\Utils\\Utils.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Leo\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Leo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Leo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\leox965a\\Desktop\\engine\\panda\\Utils\\Utils.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
